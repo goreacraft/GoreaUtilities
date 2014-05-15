@@ -1,0 +1,9 @@
+Death Message: You can use the command '/gback' to get back to your last death location.
+Vote message: Thank you for chosing to vote for the server!
+Vote links:
+  - http://www.goreacraft.com/serverstatsultimate
+Pool cooldown: 60
+Display names on vote results: true
+Pool duration: 30
+Deny custom polls message: You need the permission gorea.poll.create
+

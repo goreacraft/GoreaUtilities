@@ -1,0 +1,35 @@
+name: GoreaUtilities
+author: GoreaCraft
+main: com.goreacraft.plugins.goreautilities.Main
+version: 1.2
+website: http://www.goreacraft.com
+description: Got you!
+depends: [ProtocolLib]
+commands:
+    goreautilities:
+        aliases: [gu, gutilities]
+        description: You busted
+        usage: /gu ?
+    gtp:
+      description: teleports to last player location(offline players too)
+      usage: /gtp <player>
+    gtphere:
+      description: teleports (move if offline) the player to your location 
+      usage: /gtphere <player>
+    vote:
+      description: lists voting links
+      usage: /vote
+    poll:
+      description: can change weather or time
+      usage: /poll time <day>, /poll weather <sun>, /poll help for more info
+permissions:
+   gorea.poll.*:
+     description: Gives access to all GoreaPoll commands
+     children:
+       gorea.poll.time: true    
+       gorea.poll.weather: true
+       gorea.poll.create: true
+       gorea.poll.time.cooldown: true
+       gorea.poll.weather.cooldown: true
+       gorea.poll.create.cooldown: true
+
